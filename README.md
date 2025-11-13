@@ -4,3 +4,12 @@ Nuget: System.Management 4..7.0  System.ServiceProcess.ServiceController 4.7.0
 涉及功能：构建服务所需exe 自动创建txt日志并写入内容  串口通讯 关机指令 服务启动指令
 
 *create.bat 脚本中涉及服务构建，关闭快速启动
+
+运行步骤：
+1.创建新的C# 控制台应用，引入cs文件，安装相关NuGet包，运行生成exe文件
+2.将bat文件放到exe同级目录下，以管理员身份运行
+
+
+校验方法：
+1.查看任务管理器中是否有创建好的服务AutoUPS
+2.查看C盘下Service.log日志
